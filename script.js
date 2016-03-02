@@ -1,11 +1,14 @@
 $(document).ready(function(){
 
-var fromLeft = function(newElem) {
+var fromLeft = function(newElem, dist) {
 	console.log("clicked");
-	$(newElem).animate({'left' : '15px'},1500);
+	$(newElem).animate({'right' : dist},400);
 };
 
-$('#cart-icon').click(function(){fromLeft("#apple-cinn-feat")});
+$('#cart-icon').click(function(){
+	fromLeft("#cart-screen", '0px');
+
+});
 
 
 });

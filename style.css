@@ -35,12 +35,14 @@
 	position: absolute;
     z-index: 2;
     top: 325px;
-    left: -15px;
+    left: 15px;
     width: 175px;
 }
 
 #cart-screen {
-	position: absolute;
-	right: -300;
-	display: none;
+	right: -374px;
+    top: 0px;
+    position: absolute;
+	z-index: 3;
+
 }
