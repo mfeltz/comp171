@@ -53,3 +53,18 @@
     left: 3px;
     width: 55px;
 }
+
+#checkout-btn {
+    position: absolute;
+    z-index: 3;
+    bottom: 4px;
+    right: 9px;
+    width: 169px;
+}
+
+#checkout-screen {
+	left: 0px;
+    top: 626px;
+    position: absolute;
+	z-index: 4;
+}
