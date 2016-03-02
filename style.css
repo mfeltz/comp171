@@ -18,6 +18,23 @@
 #cart-icon {
     position: absolute;
     z-index: 2;
-    top: 1px;
-    right: 1px; 
+    top: 5px;
+    right: 7px;
+    width: 30px;
+}
+
+#menu-icon {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 7px;
+    width: 30px;
+}
+
+#apple-cinn-feat {
+	position: absolute;
+    z-index: 2;
+    top: 325px;
+    left: 15px;
+    width: 175px;
 }
