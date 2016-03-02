@@ -1,6 +1,7 @@
-html {
+body {
     width: 375px;
     height: 627px;
+    overflow: hidden;
 }
 
 .screen-div {
