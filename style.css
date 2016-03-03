@@ -17,6 +17,8 @@ html, body {
 	height: inherit;
 }
 
+
+/* HOME */
 #home-img {
 	z-index: -1;
 }
@@ -45,6 +47,8 @@ html, body {
     width: 175px;
 }
 
+
+/* CART */
 #cart-screen {
 	left: 374px;
     top: 0px;
@@ -68,6 +72,8 @@ html, body {
     width: 169px;
 }
 
+
+/* CHECKOUT */
 #checkout-screen {
 	left: 0px;
     top: 626px;
@@ -113,6 +119,8 @@ html, body {
     width: 47px;
 }
 
+
+/* MENU SCREEN */
 #menu-screen {
     right: 374px;
     top: 0px;
@@ -136,6 +144,8 @@ html, body {
     width: 230px;
 }
 
+
+/* VIEW ALL ICE CREAM*/
 #view-all-screen {
     left: 374px;
     top: 0px;
@@ -151,11 +161,45 @@ html, body {
     width: 105px;
 }
 
+
+/* ORANGUTAN WIDGET */
 #orangutan-screen {
     left: 374px;
     top: 0px;
     position: absolute;
     z-index: 5;
+}
+
+#select-size {
+    position: absolute;
+    z-index: 5;
+    top: 115px;
+    left: 30px;
+    width: 300px;
+}
+
+#select-size {
+    position: absolute;
+    z-index: 5;
+    top: 317px;
+    left: 19px;
+    width: 327px;
+}
+
+#select-top-1 {
+    position: absolute;
+    z-index: 5;
+    top: 327px;
+    left: 19px;
+    width: 327px;
+}
+
+#select-top-2 {
+    position: absolute;
+    z-index: 5;
+    top: 337px;
+    left: 19px;
+    width: 327px;
 }
 
 
