@@ -175,7 +175,7 @@ html, body {
     position: absolute;
     z-index: 4;
     top: 281px;
-    left: 13px;
+    left: 22px;
 }
 
 #place-holder-2 {
@@ -185,7 +185,7 @@ html, body {
 #size-text-2 {
     position: absolute;
     z-index: 4;
-    top: 24px;
+    top: 21px;
     left: 46px;
 }
 
@@ -417,7 +417,7 @@ html, body {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 }
 
 .select {
@@ -445,7 +445,7 @@ html, body {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 }
 
 #sel-3 {
