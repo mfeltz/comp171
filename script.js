@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	var cartZIndex = 3;
+	var price = 8.39;
 
 	var rightSlide = function(oldElem, newElem, dist) {
 		$(newElem).animate({'left' : dist}, 400);
@@ -105,6 +106,11 @@ $(document).ready(function(){
 		rightSlide(oldElem, '#topping-screen', '374px');
 	});
 
+	$('#add-to-cart').click(function() {
+		if($('#orangutan-size-span').text() != 'Select Size') {
+			$('#added').show(0).delay(1000).fadeOut(1000);
+		}
+	});
 
 	// SELECTING
 	//select size
@@ -113,8 +119,15 @@ $(document).ready(function(){
 		$(this).css({fontWeight: 'bold'});
 		var text = $(this).text();
 		$('#orangutan-size-span').html(text);
-	});
 
+		if(text != 'Small') {
+			$('#price').html(price += 0.75);
+		} else {
+			if(price > 8.39) {
+				$('#price').html(price -= 0.75);
+			}
+		}
+	});
 
 	//select topping
 	$('#topping-screen .top-op').click(function() {
@@ -122,12 +135,19 @@ $(document).ready(function(){
 		$(this).css({fontWeight: 'bold'});
 		var text = $(this).text();
 		if (text == "None") {
-			text = 'Topping #1  (+ $0.75)'
-		};
+			text = 'Topping #1  (+ $0.75)';
+			if(price > 9.39) {
+				$('#price').html(price -= 0.75);
+			}
+		} else {
+			if(price != 9.89) {
+				$('#price').html(price += 0.75);
+			}
+		}
 		$('#orangutan-top-1').html(text);
 	});
 
-
+//work on topping price logic
 
 });
 

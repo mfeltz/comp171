@@ -216,6 +216,39 @@ html, body {
     left: 28px;
 }
 
+#added {
+    position: absolute;
+    z-index: 5;
+    bottom: 64px;
+    right: 11px;
+    width: 116px;
+    display: none;
+}
+
+#add-to-cart {
+    position: absolute;
+    z-index: 5;
+    bottom: 13px;
+    right: 19px;
+    width: 116px;
+}
+
+#qty {
+    position: absolute;
+    z-index: 5;
+    bottom: 63px;
+    left: 118px;
+    width: 67px;
+}
+
+#price-sign {
+    position: absolute;
+    z-index: 5;
+    bottom: 18px;
+    left: 28px;
+    width: 67px;
+    font-size: 26px;
+}
 
 /*ORANGUTAN SIZE*/
 #size-screen {
