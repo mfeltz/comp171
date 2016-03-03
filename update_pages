@@ -6,3 +6,7 @@ git checkout gh-pages
 git merge master
 git checkout master
 git status
+git checkout gh-pages
+git push
+git checkout master
+git status
