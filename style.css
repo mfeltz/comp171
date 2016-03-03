@@ -6,22 +6,25 @@ html, body {
 }
 
 .screen-div {
-	width: 100%;
-	height: 100%
+    width: 100%;
+    height: 100%
 }
 
 .bg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: inherit;
-	height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
 }
 
 
 /* HOME */
+#home-screen {
+    top: 626px;
+}
 #home-img {
-	z-index: -1;
+    z-index: -1;
 }
 
 .cart-icon {
@@ -41,7 +44,7 @@ html, body {
 }
 
 #orangutan-feat {
-	position: absolute;
+    position: absolute;
     z-index: 2;
     top: 304px;
     left: 15px;
@@ -51,10 +54,10 @@ html, body {
 
 /* CART */
 #cart-screen {
-	left: 374px;
+    left: 374px;
     top: 0px;
     position: absolute;
-	z-index: 3;
+    z-index: 3;
 }
 
 .back-arrow {
@@ -73,13 +76,61 @@ html, body {
     width: 169px;
 }
 
+#cont-feast {
+    position: absolute;
+    z-index: 3;
+    bottom: 4px;
+    left: 9px;
+    width: 169px;
+}
+
+.place-holder {
+    display: none;
+}
+
+#placeholder1container {
+    position: absolute;
+    z-index: 3;
+    top: 196px;
+    left: 9px;
+}
+
+#place-holder-1 {
+    width: 342px;
+}
+
+.size-text, .topping-text {
+    font-size: 12px;
+}
+
+#size-text-1 {
+    position: absolute;
+    z-index: 3;
+    top: 57px;
+    left: 142px;
+}
+
+#topping-text-1 {
+    position: absolute;
+    z-index: 3;
+    top: 69px;
+    left: 209px;
+}
+
+#price-sign-1 {
+    position: absolute;
+    z-index: 3;
+    top: 117px;
+    right: 9px;
+}
+
 
 /* CHECKOUT */
 #checkout-screen {
-	left: 0px;
+    left: 0px;
     top: 626px;
     position: absolute;
-	z-index: 4;
+    z-index: 4;
 }
 
 #select-address {
@@ -118,6 +169,39 @@ html, body {
     top: 4px;
     left: 9px;
     width: 47px;
+}
+
+#placeholder2container {
+    position: absolute;
+    z-index: 4;
+    top: 281px;
+    left: 13px;
+}
+
+#place-holder-2 {
+    width: 342px;
+}
+
+#size-text-2 {
+    position: absolute;
+    z-index: 4;
+    top: 24px;
+    left: 46px;
+}
+
+#topping-text-2 {
+    position: absolute;
+    z-index: 4;
+    top: 38px;
+    left: 118px;
+}
+
+#order-btn {
+    position: absolute;
+    z-index: 4;
+    bottom: 0px;
+    left: 0px;
+    width: inherit;
 }
 
 
@@ -328,4 +412,60 @@ html, body {
     top: 557px;
 }
 
+/*SELECT ADDRESS*/
+#address-screen {
+    left: 374px;
+    top: 0px;
+    position: absolute;
+    z-index: 4;
+}
 
+.select {
+    border: 2px solid black;
+    border-radius: 120px;
+    width: 20px;
+    height: 20px;
+    z-index: 4;
+}
+
+#sel-1 {
+    position: absolute;
+    top: 112px;
+    right: 10px;
+}
+
+#sel-2 {
+    position: absolute;
+    top: 266px;
+    right: 10px;
+}
+
+/*SELECT PAYMENT*/
+#payment-screen {
+    left: 374px;
+    top: 0px;
+    position: absolute;
+    z-index: 4;
+}
+
+#sel-3 {
+    position: absolute;
+    top: 112px;
+    right: 10px;
+}
+
+/*PROCESSING*/
+#processing-screen {
+    top: 626px;
+    left: 0px;
+    position: absolute;
+    z-index: 4;
+}
+
+/*CONFIRM*/
+#confirm-screen {
+    left: 626px;
+    top: 0px;
+    position: absolute;
+    z-index: 4;
+}
