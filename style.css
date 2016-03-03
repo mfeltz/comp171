@@ -151,4 +151,11 @@ html, body {
     width: 105px;
 }
 
+#orangutan-screen {
+    left: 374px;
+    top: 0px;
+    position: absolute;
+    z-index: 5;
+}
+
 

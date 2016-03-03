@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	var cartZIndex = 3;
+
 	var rightSlide = function(oldElem, newElem, dist) {
 		$(newElem).animate({'left' : dist}, 400);
 	};
@@ -60,6 +62,24 @@ $(document).ready(function(){
 	$('#view-all-screen #cart-icon').click(function() {
 		var oldElem = $(this).parent();
 		$('#cart-screen').css({zIndex: 4});
+		rightSlide(oldElem, '#cart-screen', '0px');
+	});	
+
+	//open/close orangutan
+	$('#orangutan').click(function() {
+		var oldElem = $(this).parent();
+		rightSlide(oldElem, '#orangutan-screen', '0px');
+	});
+
+	$('#orangutan-screen #back-arrow').click(function() {
+		var oldElem = $(this).parent();
+		rightSlide(oldElem, '#orangutan-screen', '374px');
+	});
+
+	//open/close cart from orangutan
+	$('#orangutan-screen #cart-icon').click(function() {
+		var oldElem = $(this).parent();
+		$('#cart-screen').css({zIndex: 6});
 		rightSlide(oldElem, '#cart-screen', '0px');
 	});	
 
