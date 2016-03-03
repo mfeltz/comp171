@@ -66,7 +66,7 @@ $(document).ready(function(){
 	});	
 
 	//open/close orangutan
-	$('#orangutan').click(function() {
+	$('.orangutan-link').click(function() {
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#orangutan-screen', '0px');
 	});
