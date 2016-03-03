@@ -6,16 +6,16 @@ html, body {
 }
 
 .screen-div {
-	width: 100%;
-	height: 100%
+    width: 100%;
+    height: 100%
 }
 
 .bg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: inherit;
-	height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
 }
 
 
@@ -24,7 +24,7 @@ html, body {
     top: 626px;
 }
 #home-img {
-	z-index: -1;
+    z-index: -1;
 }
 
 .cart-icon {
@@ -44,7 +44,7 @@ html, body {
 }
 
 #orangutan-feat {
-	position: absolute;
+    position: absolute;
     z-index: 2;
     top: 304px;
     left: 15px;
@@ -54,10 +54,10 @@ html, body {
 
 /* CART */
 #cart-screen {
-	left: 374px;
+    left: 374px;
     top: 0px;
     position: absolute;
-	z-index: 3;
+    z-index: 3;
 }
 
 .back-arrow {
@@ -127,10 +127,10 @@ html, body {
 
 /* CHECKOUT */
 #checkout-screen {
-	left: 0px;
+    left: 0px;
     top: 626px;
     position: absolute;
-	z-index: 4;
+    z-index: 4;
 }
 
 #select-address {
@@ -175,7 +175,11 @@ html, body {
     position: absolute;
     z-index: 4;
     top: 281px;
+<<<<<<< HEAD
     left: 13px;
+=======
+    left: 22px;
+>>>>>>> master
 }
 
 #place-holder-2 {
@@ -185,7 +189,11 @@ html, body {
 #size-text-2 {
     position: absolute;
     z-index: 4;
+<<<<<<< HEAD
     top: 24px;
+=======
+    top: 21px;
+>>>>>>> master
     left: 46px;
 }
 
@@ -417,7 +425,7 @@ html, body {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 }
 
 .select {
@@ -445,7 +453,7 @@ html, body {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 }
 
 #sel-3 {
