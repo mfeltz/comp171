@@ -23,6 +23,13 @@
 		<img class="bg" id="cart-img" src="backgrounds/clickCheckout.png">
 		<img class="back-arrow" src="images/back.png">
 		<img id="checkout-btn" src="images/checkout-btn.png">
+		<img id="cont-feast" src="images/cont-feast.png">
+		<div class="place-holder" id="placeholder1container">
+			<img class="place-holder-img" id="place-holder-1" src="images/placeholder1.png">
+			<span class="size-text" id="size-text-1">small</span>
+			<span class="topping-text" id="topping-text-1"></span>
+			<span id="price-sign-1">$<span class="price-text" id="price">8.39</span></span>
+		</div>
 	</div>
 
 	<!-- User clicked 'Checkout' button -->
@@ -33,7 +40,42 @@
 		<span id="select-address-label">Select Address</span></img>
 		<img id="select-payment" src="images/select-payment.png">
 		<span id="select-payment-label">Select Payment</span></img>
+		<div class="place-holder" id="placeholder2container">
+			<img class="place-holder-img" id="place-holder-2" src="images/placeholder2.png">
+			<span class="size-text" id="size-text-2">small</span>
+			<span class="topping-text" id="topping-text-2">adsf</span>
+		</div>
+		<img id="order-btn" src="images/place-order.png">
+
 	</div>
+
+	<!-- SELECT ADDRESS -->
+	<div class="screen-div" id="address-screen">
+		<img class="bg" id="address-img" src="backgrounds/SelectAddress.png">
+		<img class="back-arrow" src="images/back.png">
+		<div class="select" id="sel-1"></div>
+		<div class="select" id="sel-2"></div>
+	</div>
+
+	<!-- SELECT PAYMENT -->
+	<div class="screen-div" id="payment-screen">
+		<img class="bg" id="payment-img" src="backgrounds/SelectPayment.png">
+		<img class="back-arrow" src="images/back.png">
+		<div class="select" id="sel-3"></div>
+	</div>
+
+	<!-- PROCESSING -->
+	<div class="screen-div" id="processing-screen">
+		<img class="bg" id="processing-img" src="backgrounds/processing.png">
+	</div>
+
+	<!-- CONFIRMATION -->
+	<div class="screen-div" id="confirm-screen">
+		<img class="bg" id="complete-img" src="backgrounds/complete.png">
+	</div>
+
+
+
 
 	<!-- MENU -->
 	<div class="screen-div" id="menu-screen">
@@ -56,16 +98,16 @@
 		<img class="cart-icon" src="images/cart.png">
 		<img class="back-arrow" src="images/back.png">
 		<img id="select-size" src="images/option-arrow.png">
-		<span id="orangutan-size-span">Select Size</span>
+		<span class="size-text" id="orangutan-size-span">Select Size</span>
 		<img id="select-top-1" src="images/option-arrow.png">
-		<span id="orangutan-top-1">Topping #1  (+ $0.75)</span>
+		<span class="topping-text" id="orangutan-top-1">Topping #1  (+ $0.75)</span>
 		<img id="select-top-2" src="images/option-arrow.png">
 		<span id="orangutan-top-2">Topping #2  (+ $0.75)</span>
 		<span id="added">Added!</span>
 		<img id="add-to-cart" src="images/addToCart.png">
 		<img id="qty" src="images/qty.png">
 
-		<span id="price-sign">$<span id="price">8.39</span></span>
+		<span id="price-sign">$<span class="price-text" id="price">8.39</span></span>
 	</div>
 
 	<!-- ORANGUTAN SELECT SIZE -->
@@ -92,7 +134,6 @@
 		<span class="top-op" id="top-10">Rainbow Sprinkles</span>
 		<span class="top-op" id="top-11">Hot Fudge</span>
 	</div>
-
 
 
 
