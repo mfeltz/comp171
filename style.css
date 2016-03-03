@@ -171,7 +171,7 @@ html, body {
     z-index: 5;
 }
 
-.select-size {
+#select-size {
     position: absolute;
     z-index: 5;
     top: 317px;
@@ -184,10 +184,9 @@ html, body {
     z-index: 5;
     top: 322px;
     left: 28px;
-    width: 327px;
  }
 
-.select-top-1 {
+#select-top-1 {
     position: absolute;
     z-index: 5;
     top: 357px;
@@ -200,10 +199,9 @@ html, body {
     z-index: 5;
     top: 362px;
     left: 28px;
-    width: 327px;
 }
 
-.select-top-2 {
+#select-top-2 {
     position: absolute;
     z-index: 5;
     top: 398px;
@@ -216,7 +214,85 @@ html, body {
     z-index: 5;
     top: 403px;
     left: 28px;
-    width: 327px;
+}
+
+
+/*ORANGUTAN SIZE*/
+#size-screen {
+    left: 374px;
+    top: 0px;
+    position: absolute;
+    z-index: 7;
+}
+
+.op {
+    position: absolute;
+    left: 103px;
+    z-index: 7;
+    padding-top: 11px;
+    padding-left: 15px;
+    width: 250px;
+    height: 28px;
+}
+
+#small-op {
+    top: 75px;
+}
+
+#large-op {
+    top: 116px;
+}
+
+/*ORANGUTAN TOPPINGS*/
+#topping-screen {
+    left: 374px;
+    top: 0px;
+    position: absolute;
+    z-index: 7;
+}
+
+.top-op {
+    position: absolute;
+    left: 103px;
+    z-index: 7;
+    padding-top: 14px;
+    padding-left: 15px;
+    width: 250px;
+    height: 34px;
+}
+
+#top-1 {
+    top: 57px;
+}
+#top-2 {
+    top: 107px;
+}
+#top-3 {
+    top: 157px;
+}
+#top-4 {
+    top: 207px;
+}
+#top-5 {
+    top: 257px;
+}
+#top-6 {
+    top: 307px;
+}
+#top-7 {
+    top: 357px;
+}
+#top-8 {
+    top: 407px;
+}
+#top-9 {
+    top: 457px;
+}
+#top-10 {
+    top: 507px;
+}
+#top-11 {
+    top: 557px;
 }
 
 

@@ -83,6 +83,50 @@ $(document).ready(function(){
 		rightSlide(oldElem, '#cart-screen', '0px');
 	});	
 
+	//open/close size selection
+	$('#select-size').click(function() {
+		var oldElem = $(this).parent();
+		rightSlide(oldElem, '#size-screen', '0px');
+	});	
+
+	$('#size-screen .back-arrow').click(function() {
+		var oldElem = $(this).parent();
+		rightSlide(oldElem, '#size-screen', '374px');
+	});
+
+	//open/close topping selection
+	$('#select-top-1').click(function() {
+		var oldElem = $(this).parent();
+		rightSlide(oldElem, '#topping-screen', '0px');
+	});	
+
+	$('#topping-screen .back-arrow').click(function() {
+		var oldElem = $(this).parent();
+		rightSlide(oldElem, '#topping-screen', '374px');
+	});
+
+
+	// SELECTING
+	//select size
+	$('#size-screen .op').click(function() {
+		$(this).siblings().css({fontWeight: 'normal'});
+		$(this).css({fontWeight: 'bold'});
+		var text = $(this).text();
+		$('#orangutan-size-span').html(text);
+	});
+
+
+	//select topping
+	$('#topping-screen .top-op').click(function() {
+		$(this).siblings().css({fontWeight: 'normal'});
+		$(this).css({fontWeight: 'bold'});
+		var text = $(this).text();
+		if (text == "None") {
+			text = 'Topping #1  (+ $0.75)'
+		};
+		$('#orangutan-top-1').html(text);
+	});
+
 
 
 });
