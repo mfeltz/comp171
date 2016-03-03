@@ -13,12 +13,12 @@ $(document).ready(function(){
 	};
 
 	//open/close cart from home
-	$('#cart-icon').click(function(){
+	$('#home-screen #cart-icon').click(function(){
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#cart-screen', '0px');
 	});
 
-	$('#back-arrow').click(function() {
+	$('#cart-screen #back-arrow').click(function() {
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#cart-screen', '375px');
 	});
@@ -34,7 +34,7 @@ $(document).ready(function(){
 		topSlide(oldElem, '#checkout-screen', '626px');
 	});
 
-	
+	//open/close menu from home
 	$('#menu-icon').click(function(){
 		var oldElem = $(this).parent();
 		leftSlide(oldElem, '#menu-screen', '0px');
@@ -45,16 +45,25 @@ $(document).ready(function(){
 		leftSlide(oldElem, '#menu-screen', '375px');
 	});
 
-	//open view all
+	//open/close view all from menu
 	$('#view-all').click(function(){
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#view-all-screen', '0px');
 	});
 
-	$('#back-arrow').click(function() {
+	$('#view-all-screen #back-arrow').click(function() {
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#view-all-screen', '375px');
 	});	
+
+	//open/close cart from view all
+	$('#view-all-screen #cart-icon').click(function() {
+		var oldElem = $(this).parent();
+		$('#cart-screen').css({zIndex: 4});
+		rightSlide(oldElem, '#cart-screen', '0px');
+	});	
+
+
 
 });
 
