@@ -15,12 +15,12 @@ $(document).ready(function(){
 	};
 
 	//open/close cart from home
-	$('#home-screen #cart-icon').click(function(){
+	$('#home-screen .cart-icon').click(function(){
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#cart-screen', '0px');
 	});
 
-	$('#cart-screen #back-arrow').click(function() {
+	$('#cart-screen .back-arrow').click(function() {
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#cart-screen', '375px');
 	});
@@ -53,13 +53,13 @@ $(document).ready(function(){
 		rightSlide(oldElem, '#view-all-screen', '0px');
 	});
 
-	$('#view-all-screen #back-arrow').click(function() {
+	$('#view-all-screen .back-arrow').click(function() {
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#view-all-screen', '375px');
 	});	
 
 	//open/close cart from view all
-	$('#view-all-screen #cart-icon').click(function() {
+	$('#view-all-screen .cart-icon').click(function() {
 		var oldElem = $(this).parent();
 		$('#cart-screen').css({zIndex: 4});
 		rightSlide(oldElem, '#cart-screen', '0px');
@@ -71,13 +71,13 @@ $(document).ready(function(){
 		rightSlide(oldElem, '#orangutan-screen', '0px');
 	});
 
-	$('#orangutan-screen #back-arrow').click(function() {
+	$('#orangutan-screen .back-arrow').click(function() {
 		var oldElem = $(this).parent();
 		rightSlide(oldElem, '#orangutan-screen', '374px');
 	});
 
 	//open/close cart from orangutan
-	$('#orangutan-screen #cart-icon').click(function() {
+	$('#orangutan-screen .cart-icon').click(function() {
 		var oldElem = $(this).parent();
 		$('#cart-screen').css({zIndex: 6});
 		rightSlide(oldElem, '#cart-screen', '0px');

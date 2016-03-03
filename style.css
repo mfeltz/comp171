@@ -2,6 +2,7 @@ html, body {
     max-width: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
+    font-family: Arial;
 }
 
 .screen-div {
@@ -23,7 +24,7 @@ html, body {
 	z-index: -1;
 }
 
-#cart-icon {
+.cart-icon {
     position: absolute;
     z-index: 2;
     top: 5px;
@@ -56,7 +57,7 @@ html, body {
 	z-index: 3;
 }
 
-#back-arrow {
+.back-arrow {
     position: absolute;
     z-index: 3;
     top: -1px;
@@ -170,15 +171,7 @@ html, body {
     z-index: 5;
 }
 
-#select-size {
-    position: absolute;
-    z-index: 5;
-    top: 115px;
-    left: 30px;
-    width: 300px;
-}
-
-#select-size {
+.select-size {
     position: absolute;
     z-index: 5;
     top: 317px;
@@ -186,19 +179,43 @@ html, body {
     width: 327px;
 }
 
-#select-top-1 {
+ #orangutan-size-span {
     position: absolute;
     z-index: 5;
-    top: 327px;
+    top: 322px;
+    left: 28px;
+    width: 327px;
+ }
+
+.select-top-1 {
+    position: absolute;
+    z-index: 5;
+    top: 357px;
     left: 19px;
     width: 327px;
 }
 
-#select-top-2 {
+#orangutan-top-1 {
     position: absolute;
     z-index: 5;
-    top: 337px;
+    top: 362px;
+    left: 28px;
+    width: 327px;
+}
+
+.select-top-2 {
+    position: absolute;
+    z-index: 5;
+    top: 398px;
     left: 19px;
+    width: 327px;
+}
+
+#orangutan-top-2 {
+    position: absolute;
+    z-index: 5;
+    top: 403px;
+    left: 28px;
     width: 327px;
 }
 
