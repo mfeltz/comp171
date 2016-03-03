@@ -63,9 +63,9 @@ html, body {
 #checkout-btn {
     position: absolute;
     z-index: 3;
-    bottom: 4px;
+    bottom: 3px;
     right: 9px;
-    width: 169px;
+    width: 161px;
 }
 
 #checkout-screen {
