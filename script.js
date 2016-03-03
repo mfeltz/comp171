@@ -124,7 +124,39 @@ $(document).ready(function(){
 	});
 
 	$('#order-btn').click(function() {
-		topSlide('#processing-screen', '0px').delay(1500).topSlide('#confirm-screen', '0px');
+		topSlide('#processing-screen', '0px');
+		$('#confirm-screen').delay(3000);
+		topSlide('#confirm-screen', '0px');
+	});
+
+	//ADDING PAYMENT
+	$('#add-pay').click(function() {
+		rightSlide('#new-card-screen', '0');
+		rightSlide('#payment-screen', '375px');
+		leftSlide('#card-added-screen', '0');
+
+		$('#card-info-screen').delay(1000);
+		topSlide('#card-info-screen', '0px');
+
+		$('#new-card-screen').delay(500);
+		rightSlide('#new-card-screen', '375px');
+	});
+
+	$('#card-info-screen .back-arrow').click(function() {
+		rightSlide('#new-card-screen', '375px');
+		$('#card-info-screen').delay(1000);
+		rightSlide('#card-info-screen', '374px');
+	});
+	//at this point card added (w/ 2 cards) should be showing.
+
+	$('#card-info-screen .done-new-card').click(function() {
+		rightSlide('#new-card-screen', '375px');
+		$('#card-info-screen').delay(1000);
+		rightSlide('#card-info-screen', '374px');
+	});
+
+	$('#card-added-screen .back-arrow').click(function() {
+		rightSlide('#card-added-screen', '374px');
 	});
 
 	//ADD TO CART

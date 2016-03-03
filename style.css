@@ -454,6 +454,44 @@ html, body {
     right: 10px;
 }
 
+#add-pay{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+/*CARD ADDED*/
+#card-added-screen {
+    right: 374px;
+    top: 0px;
+    position: absolute;
+    z-index: 5;
+}
+
+
+/*ENTER NEW CARD*/
+#new-card-screen {
+    left: 374px;
+    top: 0px;
+    position: absolute;
+    z-index: 5;
+}
+
+.done-new-card{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+/*AUTO CARD INFO*/
+#card-info-screen {
+    top: 626px;
+    left: 0px;
+    position: absolute;
+    z-index: 5;
+}
+
+
 /*PROCESSING*/
 #processing-screen {
     top: 626px;
@@ -462,10 +500,16 @@ html, body {
     z-index: 4;
 }
 
+#waiting {
+    position: absolute;
+    top: 260px;
+    left: 156px;
+}
+
 /*CONFIRM*/
 #confirm-screen {
-    left: 626px;
-    top: 0px;
+    top: 626px;
+    left: 0px;
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 }
