@@ -145,10 +145,10 @@ html, body {
 
 #orangutan {
     position: absolute;
-    z-index: 3;
-    bottom: 4px;
-    left: 9px;
-    width: 47px;
+    z-index: 4;
+    bottom: 68px;
+    left: 220px;
+    width: 105px;
 }
 
 
