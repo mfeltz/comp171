@@ -9,8 +9,9 @@ $(document).ready(function(){
 
 	var updatePrice = function(amt) {
 		price += amt;
+		$('.price-text').html(price);
 		var actualPrice = price + defaultPrice;
-		$('.price-text').html(actualPrice);
+		$('.cart-price-text').html(actualPrice);
 		var tax = ((actualPrice + 1) * 0.06).toFixed(2);
 		$('.tax-text').html(tax);
 		var total = parseInt(tax) + actualPrice;
@@ -127,9 +128,14 @@ $(document).ready(function(){
 	});
 
 	$('#order-btn').click(function() {
-		topSlide('#processing-screen', '0px');
-		$('#confirm-screen').delay(3000);
-		topSlide('#confirm-screen', '0px');
+		if(($('#select-address-label').text() != 'Select Address')
+			&& ($('#select-payment-label').text() != 'Select Payment')) {
+			topSlide('#processing-screen', '0px');
+			$('#confirm-screen').delay(3000);
+			topSlide('#confirm-screen', '0px');
+		} else {
+			$('#cant-order').show(0).delay(1000).fadeOut(1000);
+		}
 	});
 
 	//ADDING PAYMENT
