@@ -210,7 +210,7 @@ html, body {
     right: 374px;
     top: 0px;
     position: absolute;
-    z-index: 3;
+    z-index: 4;
 }
 
 #menu-icon-close {
@@ -510,6 +510,13 @@ html, body {
 #confirm-screen {
     top: 626px;
     left: 0px;
+    position: absolute;
+    z-index: 5;
+}
+
+#back-home {
+    bottom: 0px;
+    right: 0px;
     position: absolute;
     z-index: 5;
 }
