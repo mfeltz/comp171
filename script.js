@@ -5,11 +5,15 @@ $(document).ready(function(){
 	var size_text;
 	var topping1_text;
 
+	//we're not accounting for the default 2 sundaes
+	// otherwise it works!
+
 	var updatePrice = function(amt) {
 		$('.price-text').html(price += amt);
 		var tax = ((price + 1) * 0.06).toFixed(2);
 		$('.tax-text').html(tax);
-		$('.total-text').html(parseInt(tax, 10) + parseInt(price, 10));
+		var total = parseInt(tax) + price + 18.28;
+		$('.total-text').html(total);
 
 	};
 
@@ -38,7 +42,6 @@ $(document).ready(function(){
 
 	//open/close checkout from cart
 	$('#checkout-btn').click(function() {
-		console.log($('#cart-screen').css('zIndex'));
 		$('#checkout-screen').css({zIndex: $('#cart-screen').css('zIndex')});
 		topSlide('#checkout-screen', '0px');
 	});
@@ -46,15 +49,6 @@ $(document).ready(function(){
 	$('#close-icon').click(function() {
 		topSlide('#checkout-screen', '626px');
 	});
-
-	//open home from cart MAY NOT WORK. not needed.
-	// $('#cont-feast').click(function() {
-	// 	console.log($('#cart-screen').css('zIndex'));
-	// 	var cartZ = parseInt($('#cart-screen').css('zIndex'));
-	// 	cartZ++;
-	// 	$('#home-screen').css({zIndex: 10});
-	// 	// topSlide('#home-screen', '0px');
-	// });
 
 	//open/close menu from home
 	$('#home-screen #menu-icon').click(function(){
@@ -165,12 +159,11 @@ $(document).ready(function(){
 
 	//ADD TO CART
 	$('#add-to-cart').click(function() {
-		console.log(price);
-		updatePrice(0);
 		if($('#orangutan-size-span').text() != 'Select Size') {
+			updatePrice(0);
 			$('#added').show(0).delay(1000).fadeOut(1000);
+			$('.place-holder').show();
 		}
-		$('.place-holder').show();
 	});
 
 	// SELECTING
