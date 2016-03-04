@@ -51,6 +51,44 @@ html, body {
     width: 175px;
 }
 
+/*CART PRICES*/
+#cart-total {
+    position: absolute;
+    bottom: 144px;
+    left: 304px;
+}
+
+#cart-tax {
+    position: absolute;
+    bottom: 82px;
+    left: 313px;
+}
+
+#cart-grand-total {
+    position: absolute;
+    bottom: 50px;
+    left: 303px;
+}
+
+/*CHECKOUT PRICES*/
+#checkout-total {
+    position: absolute;
+    bottom: 143px;
+    left: 304px;
+}
+
+#checkout-tax {
+    position: absolute;
+    bottom: 82px;
+    left: 313px;
+}
+
+#checkout-grand-total {
+    position: absolute;
+    bottom: 49px;
+    left: 303px;
+}
+
 
 /* CART */
 #cart-screen {
@@ -85,6 +123,10 @@ html, body {
 }
 
 .place-holder {
+    display: none;
+}
+
+.card-place-holder {
     display: none;
 }
 
@@ -204,13 +246,12 @@ html, body {
     width: inherit;
 }
 
-
 /* MENU SCREEN */
 #menu-screen {
     right: 374px;
     top: 0px;
     position: absolute;
-    z-index: 4;
+    z-index: 3;
 }
 
 #menu-icon-close {
@@ -417,7 +458,7 @@ html, body {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 5;
+    z-index: 6;
 }
 
 .select {
@@ -445,12 +486,28 @@ html, body {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 5;
+    z-index: 6;
+}
+
+#cardplaceholdercontainer {
+    position: absolute;
+    top: 209px;
+    left: 1px;
+}
+
+#card-place-holder {
+    width: 374px;
 }
 
 #sel-3 {
     position: absolute;
     top: 112px;
+    right: 10px;
+}
+
+#sel-4 {
+    position: absolute;
+    top: 66px;
     right: 10px;
 }
 
@@ -460,21 +517,12 @@ html, body {
     right: 10px;
 }
 
-/*CARD ADDED*/
-#card-added-screen {
-    right: 374px;
-    top: 0px;
-    position: absolute;
-    z-index: 5;
-}
-
-
 /*ENTER NEW CARD*/
 #new-card-screen {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 5;
+    z-index: 7;
 }
 
 .done-new-card{
@@ -488,7 +536,7 @@ html, body {
     top: 626px;
     left: 0px;
     position: absolute;
-    z-index: 5;
+    z-index: 8;
 }
 
 

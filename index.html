@@ -50,6 +50,9 @@
 			<span class="topping-text" id="topping-text-1"></span>
 			<span id="price-sign-1">$<span class="price-text" id="price">8.39</span></span>
 		</div>
+		<span class="price-text" id="cart-total">0</span>
+		<span class="tax-text" id="cart-tax">0</span>
+		<span class="total-text" id="cart-grand-total">0</span>
 	</div>
 
 	<!-- User clicked 'Checkout' button -->
@@ -66,7 +69,9 @@
 			<span class="topping-text" id="topping-text-2">adsf</span>
 		</div>
 		<img id="order-btn" src="images/place-order.png">
-
+		<span class="price-text" id="checkout-total">0</span>
+		<span class="tax-text" id="checkout-tax">0</span>
+		<span class="total-text" id="checkout-grand-total">0</span>
 	</div>
 
 	<!-- SELECT ADDRESS -->
@@ -83,16 +88,13 @@
 		<img class="back-arrow" src="images/back.png">
 		<div class="select" id="sel-3"></div>
 		<span id="add-pay">new</span>
+
+		<div class="card-place-holder" id="cardplaceholdercontainer">
+			<img class="card-place-holder-img" id="card-place-holder" src="images/card-place-holder.png">
+			<div class="select" id="sel-4"></div>
+		</div>
 	</div>
 
-	<!-- CARD ADDED -->
-	<div class="screen-div" id="card-added-screen">
-		<img class="bg" id="payment-img" src="backgrounds/cardAdded.png">
-		<img class="back-arrow" src="images/back.png">
-		<div class="select" id="sel-4"></div>
-		<div class="select" id="sel-5"></div>
-		<span id="add-pay">new</span>
-	</div>
 
 	<!-- BLANK NEW CARD -->
 	<div class="screen-div" id="new-card-screen">
