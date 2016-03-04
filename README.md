@@ -6,7 +6,10 @@ Short discussion of the differences between our design and our implementation an
 ** The prototype offers the user the ability to only customize/order the Orangutan Sundae. **
 ** Some image placement is offset in the mobile experience **
 
-Our design was done in Microsoft Powerpoint while our implementation is done in HTML, CSS, and Javascript. It is hosted at mfeltz.github.io/comp171 through Github pages (gh-pages). Source code can be found at https://github.com/mfeltz/comp171. The implementation fits the screen size of an iPhone 6. Please open this link from a mobile device or in Chrome go to developer tools and select the mobile view. 
+Source Code: https://github.com/mfeltz/comp171
+Video Link: https://youtu.be/XQyY2ZkRFUg
+
+Our design was done in Microsoft Powerpoint while our implementation is done in HTML, CSS, and Javascript. It is hosted at mfeltz.github.io/comp171 through Github pages (gh-pages). Source code can be found at https://github.com/mfeltz/comp171. The implementation fits the screen size of an iPhone 6. Please open this link from a mobile device or in Chrome go to developer tools and select the mobile view. The video can be found at https://youtu.be/XQyY2ZkRFUg
 
 Our implementation is simpler than our design because it is much more difficult to implement a software design than it is to simply create a bunch of screenshot slides in PowerPoint. For example, in the software prototype, each button must be able to react to the user’s input, usually in the form of a finger touch. On the coding side, this requires code attached to each button to be triggered and run when the user’s finger touches the button. To stick to the essence of our project’s interface, we have removed the Apple Cinnamon sundae ordering in the implementation, as it is simply a repeat of order the Orangutan sundae. Also, for the convenience of front-end web development, we have removed the checkboxes next to adding toppings to the sundaes.
 
