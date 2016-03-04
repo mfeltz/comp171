@@ -18,26 +18,6 @@
 		<img class="orangutan-link" id="orangutan-feat" src="images/orangutan.png">
 	</div>
 
-	<!-- CART --><!DOCTYPE html>
-<html>
-<head>
-	<title>Scoop N Scootery</title>
-	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-
-</head>
-<body>
-
-	<!-- HOME SCREEN -->
-	<div class="screen-div" id="home-screen">
-		<img class="bg" id="home-img" src="backgrounds/home.png">
-		<img class="cart-icon" src="images/cart.png">
-		<img id="menu-icon" src="images/menu.png">
-		<img class="orangutan-link" id="orangutan-feat" src="images/orangutan.png">
-	</div>
-
 	<!-- CART -->
 	<div class="screen-div" id="cart-screen">
 		<img class="bg" id="cart-img" src="backgrounds/clickCheckout.png">
@@ -50,6 +30,9 @@
 			<span class="topping-text" id="topping-text-1"></span>
 			<span id="price-sign-1">$<span class="price-text" id="price">8.39</span></span>
 		</div>
+		<span class="price-text" id="cart-total">0</span>
+		<span class="tax-text" id="cart-tax">0</span>
+		<span class="total-text" id="cart-grand-total">0</span>
 	</div>
 
 	<!-- User clicked 'Checkout' button -->
@@ -63,10 +46,12 @@
 		<div class="place-holder" id="placeholder2container">
 			<img class="place-holder-img" id="place-holder-2" src="images/placeholder2.png">
 			<span class="size-text" id="size-text-2">small</span>
-			<span class="topping-text" id="topping-text-2">adsf</span>
+			<span class="topping-text" id="topping-text-2"></span>
 		</div>
 		<img id="order-btn" src="images/place-order.png">
-
+		<span class="price-text" id="checkout-total">0</span>
+		<span class="tax-text" id="checkout-tax">0</span>
+		<span class="total-text" id="checkout-grand-total">0</span>
 	</div>
 
 	<!-- SELECT ADDRESS -->
@@ -82,16 +67,39 @@
 		<img class="bg" id="payment-img" src="backgrounds/SelectPayment.png">
 		<img class="back-arrow" src="images/back.png">
 		<div class="select" id="sel-3"></div>
+		<span id="add-pay">new</span>
+
+		<div class="card-place-holder" id="cardplaceholdercontainer">
+			<img class="card-place-holder-img" id="card-place-holder" src="images/card-place-holder.png">
+			<div class="select" id="sel-4"></div>
+		</div>
+	</div>
+
+
+	<!-- BLANK NEW CARD -->
+	<div class="screen-div" id="new-card-screen">
+		<img class="bg" id="new-card-img" src="backgrounds/newCardNoInfo.png">
+		<img class="back-arrow" src="images/back.png">
+		<span class="done-new-card">done</span>
+	</div>
+
+	<!-- AUTO CARD INFO -->
+	<div class="screen-div" id="card-info-screen">
+		<img class="bg" id="card-info-img" src="backgrounds/newCardWithInfo.png">
+		<img class="back-arrow" src="images/back.png">
+		<span class="done-new-card">done</span>
 	</div>
 
 	<!-- PROCESSING -->
 	<div class="screen-div" id="processing-screen">
 		<img class="bg" id="processing-img" src="backgrounds/processing.png">
+		<img id="waiting" src="images/waiting.gif">
 	</div>
 
 	<!-- CONFIRMATION -->
 	<div class="screen-div" id="confirm-screen">
 		<img class="bg" id="complete-img" src="backgrounds/complete.png">
+		<img id="back-home" src="images/back-home.png">
 	</div>
 
 
@@ -154,121 +162,6 @@
 		<span class="top-op" id="top-10">Rainbow Sprinkles</span>
 		<span class="top-op" id="top-11">Hot Fudge</span>
 	</div>
-
-
-
-</body>
-</html>
-	<div class="screen-div" id="cart-screen">
-		<img class="bg" id="cart-img" src="backgrounds/clickCheckout.png">
-		<img class="back-arrow" src="images/back.png">
-		<img id="checkout-btn" src="images/checkout-btn.png">
-	</div>
-
-	<!-- User clicked 'Checkout' button -->
-	<div class="screen-div" id="checkout-screen">
-		<img id="select-address-img" class="bg" src="backgrounds/postCheckout.png">
-		<img id="close-icon" src="images/close.png">
-		<img id="select-address" src="images/select-address.png">
-		<span id="select-address-label">Select Address</span></img>
-		<img id="select-payment" src="images/select-payment.png">
-		<span id="select-payment-label">Select Payment</span></img>
-		<div class="place-holder" id="placeholder2container">
-			<img class="place-holder-img" id="place-holder-2" src="images/placeholder2.png">
-			<span class="size-text" id="size-text-2">small</span>
-			<span class="topping-text" id="topping-text-2">adsf</span>
-		</div>
-		<img id="order-btn" src="images/place-order.png">
-
-	</div>
-
-	<!-- SELECT ADDRESS -->
-	<div class="screen-div" id="address-screen">
-		<img class="bg" id="address-img" src="backgrounds/SelectAddress.png">
-		<img class="back-arrow" src="images/back.png">
-		<div class="select" id="sel-1"></div>
-		<div class="select" id="sel-2"></div>
-	</div>
-
-	<!-- SELECT PAYMENT -->
-	<div class="screen-div" id="payment-screen">
-		<img class="bg" id="payment-img" src="backgrounds/SelectPayment.png">
-		<img class="back-arrow" src="images/back.png">
-		<div class="select" id="sel-3"></div>
-	</div>
-
-	<!-- PROCESSING -->
-	<div class="screen-div" id="processing-screen">
-		<img class="bg" id="processing-img" src="backgrounds/processing.png">
-	</div>
-
-	<!-- CONFIRMATION -->
-	<div class="screen-div" id="confirm-screen">
-		<img class="bg" id="complete-img" src="backgrounds/complete.png">
-	</div>
-
-
-
-
-	<!-- MENU -->
-	<div class="screen-div" id="menu-screen">
-		<img class="bg" id="menu-img" src="backgrounds/menu.png">
-		<img id="menu-icon-close" src="images/menu.png">
-		<img id="view-all" src="images/view-all.png">
-	</div>
-
-	<!-- VIEW ALL ICE CREAM -->
-	<div class="screen-div" id="view-all-screen">
-		<img class="bg" id="view-all-img" src="backgrounds/iceCreamWithOrangutan.png">
-		<img class="cart-icon" src="images/cart.png">
-		<img class="back-arrow" src="images/back.png">
-		<img class="orangutan-link" id="orangutan" src="images/orangutan.png">
-	</div>
-
-	<!-- ORANGUTAN WIDGET -->
-	<div class="screen-div" id="orangutan-screen">
-		<img class="bg" id="orangutan-img" src="backgrounds/OrangutanHome.png">
-		<img class="cart-icon" src="images/cart.png">
-		<img class="back-arrow" src="images/back.png">
-		<img id="select-size" src="images/option-arrow.png">
-		<span class="size-text" id="orangutan-size-span">Select Size</span>
-		<img id="select-top-1" src="images/option-arrow.png">
-		<span class="topping-text" id="orangutan-top-1">Topping #1  (+ $0.75)</span>
-		<img id="select-top-2" src="images/option-arrow.png">
-		<span id="orangutan-top-2">Topping #2  (+ $0.75)</span>
-		<span id="added">Added!</span>
-		<img id="add-to-cart" src="images/addToCart.png">
-		<img id="qty" src="images/qty.png">
-
-		<span id="price-sign">$<span class="price-text" id="price">8.39</span></span>
-	</div>
-
-	<!-- ORANGUTAN SELECT SIZE -->
-	<div class="screen-div" id="size-screen">
-		<img class="bg" id="size-img" src="backgrounds/OrangutanSelectSize.png">
-		<img class="back-arrow" src="images/back.png">
-		<span class="op" id="small-op">Small</span>
-		<span class="op" id="large-op">Large (+ $0.75)</span>
-	</div>
-
-	<!-- ORANGUTAN SELECT TOPPING -->
-	<div class="screen-div" id="topping-screen">
-		<img class="bg" id="topping-img" src="backgrounds/OrangutanSelectTopping.png">
-		<img class="back-arrow" src="images/back.png">
-		<span class="top-op" id="top-1">None</span>
-		<span class="top-op" id="top-2">Chopped KitKat</span>
-		<span class="top-op" id="top-3">Chopped Oreos</span>
-		<span class="top-op" id="top-4">Chopped Reese's</span>
-		<span class="top-op" id="top-5">Caramel Chips</span>
-		<span class="top-op" id="top-6">Brownie Bites</span>
-		<span class="top-op" id="top-7">Gummy Bears</span>
-		<span class="top-op" id="top-8">Mini Marshmallows</span>
-		<span class="top-op" id="top-9">Chocolate Sprinkles</span>
-		<span class="top-op" id="top-10">Rainbow Sprinkles</span>
-		<span class="top-op" id="top-11">Hot Fudge</span>
-	</div>
-
-
 
 </body>
 </html>

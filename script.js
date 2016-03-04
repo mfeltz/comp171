@@ -5,6 +5,18 @@ $(document).ready(function(){
 	var size_text;
 	var topping1_text;
 
+	//we're not accounting for the default 2 sundaes
+	// otherwise it works!
+
+	var updatePrice = function(amt) {
+		$('.price-text').html(price += amt);
+		var tax = ((price + 1) * 0.06).toFixed(2);
+		$('.tax-text').html(tax);
+		var total = parseInt(tax) + price + 18.28;
+		$('.total-text').html(total);
+
+	};
+
 	var rightSlide = function(newElem, dist) {
 		$(newElem).animate({'left' : dist}, 400);
 	};
@@ -30,7 +42,6 @@ $(document).ready(function(){
 
 	//open/close checkout from cart
 	$('#checkout-btn').click(function() {
-		console.log($('#cart-screen').css('zIndex'));
 		$('#checkout-screen').css({zIndex: $('#cart-screen').css('zIndex')});
 		topSlide('#checkout-screen', '0px');
 	});
@@ -39,17 +50,8 @@ $(document).ready(function(){
 		topSlide('#checkout-screen', '626px');
 	});
 
-	//open home from cart MAY NOT WORK. not needed.
-	// $('#cont-feast').click(function() {
-	// 	console.log($('#cart-screen').css('zIndex'));
-	// 	var cartZ = parseInt($('#cart-screen').css('zIndex'));
-	// 	cartZ++;
-	// 	$('#home-screen').css({zIndex: 10});
-	// 	// topSlide('#home-screen', '0px');
-	// });
-
 	//open/close menu from home
-	$('#menu-icon').click(function(){
+	$('#home-screen #menu-icon').click(function(){
 		leftSlide('#menu-screen', '0px');
 	});
 
@@ -124,15 +126,44 @@ $(document).ready(function(){
 	});
 
 	$('#order-btn').click(function() {
-		topSlide('#processing-screen', '0px').delay(1500).topSlide('#confirm-screen', '0px');
+		topSlide('#processing-screen', '0px');
+		$('#confirm-screen').delay(3000);
+		topSlide('#confirm-screen', '0px');
+	});
+
+	//ADDING PAYMENT
+	$('#add-pay').click(function() {
+		rightSlide('#new-card-screen', '0px');
+
+		$('#card-info-screen').delay(1000);
+		topSlide('#card-info-screen', '0px');
+
+	});
+
+	$('#card-info-screen .back-arrow').click(function() {
+		rightSlide('#new-card-screen', '375px');
+		topSlide('#card-info-screen', '626px');
+		$('.card-place-holder').show();
+		$('#card-info-screen').delay(1000);
+		topSlide('#card-info-screen', '626px');
+	});
+	//at this point card added (w/ 2 cards) should be showing.
+
+	$('#card-info-screen .done-new-card').click(function() {
+		rightSlide('#new-card-screen', '375px');
+		topSlide('#card-info-screen', '626px');
+		$('.card-place-holder').show();
+		$('#card-info-screen').delay(1000);
+		topSlide('#card-info-screen', '626px');
 	});
 
 	//ADD TO CART
 	$('#add-to-cart').click(function() {
 		if($('#orangutan-size-span').text() != 'Select Size') {
+			updatePrice(0);
 			$('#added').show(0).delay(1000).fadeOut(1000);
+			$('.place-holder').show();
 		}
-		$('.place-holder').show();
 	});
 
 	// SELECTING
@@ -144,10 +175,10 @@ $(document).ready(function(){
 		$('.size-text').html(size_text);
 
 		if(size_text != 'Small') {
-			$('.price-text').html(price += 0.75);
+			updatePrice(0.75);
 		} else {
 			if(price > 8.39) {
-				$('.price-text').html(price -= 0.75);
+				updatePrice(-0.75);
 			}
 		}
 	});
@@ -163,14 +194,23 @@ $(document).ready(function(){
 
 			if((size_text == 'Small' && price == 9.14) ||
 				(size_text == 'Large (+ $0.75)' && price == 9.89)) {
-				$('.price-text').html(price -= 0.75);
+				updatePrice(-0.75);
 			}
 
 		} else if((size_text == 'Small' && price == 8.39) ||
 				(size_text == 'Large (+ $0.75)' && price == 9.14)) {
-				$('.price-text').html(price += 0.75);
+				updatePrice(0.75);
 		}
 		$('.topping-text').html(topping1_text);
+	});
+
+	$('.select').click(function() {
+		$('.select').css({backgroundColor: 'transparent'});
+		$(this).css({backgroundColor: 'black'});
+	});
+
+	$('#back-home').click(function() {
+		location.reload();
 	});
 
 });

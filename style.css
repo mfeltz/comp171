@@ -51,6 +51,44 @@ html, body {
     width: 175px;
 }
 
+/*CART PRICES*/
+#cart-total {
+    position: absolute;
+    bottom: 144px;
+    left: 304px;
+}
+
+#cart-tax {
+    position: absolute;
+    bottom: 82px;
+    left: 313px;
+}
+
+#cart-grand-total {
+    position: absolute;
+    bottom: 50px;
+    left: 303px;
+}
+
+/*CHECKOUT PRICES*/
+#checkout-total {
+    position: absolute;
+    bottom: 143px;
+    left: 304px;
+}
+
+#checkout-tax {
+    position: absolute;
+    bottom: 82px;
+    left: 313px;
+}
+
+#checkout-grand-total {
+    position: absolute;
+    bottom: 49px;
+    left: 303px;
+}
+
 
 /* CART */
 #cart-screen {
@@ -85,6 +123,10 @@ html, body {
 }
 
 .place-holder {
+    display: none;
+}
+
+.card-place-holder {
     display: none;
 }
 
@@ -211,7 +253,6 @@ html, body {
     left: 0px;
     width: inherit;
 }
-
 
 /* MENU SCREEN */
 #menu-screen {
@@ -425,7 +466,7 @@ html, body {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 5;
+    z-index: 6;
 }
 
 .select {
@@ -453,7 +494,17 @@ html, body {
     left: 374px;
     top: 0px;
     position: absolute;
-    z-index: 5;
+    z-index: 6;
+}
+
+#cardplaceholdercontainer {
+    position: absolute;
+    top: 209px;
+    left: 1px;
+}
+
+#card-place-holder {
+    width: 374px;
 }
 
 #sel-3 {
@@ -461,6 +512,41 @@ html, body {
     top: 112px;
     right: 10px;
 }
+
+#sel-4 {
+    position: absolute;
+    top: 66px;
+    right: 10px;
+}
+
+#add-pay{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+/*ENTER NEW CARD*/
+#new-card-screen {
+    left: 374px;
+    top: 0px;
+    position: absolute;
+    z-index: 7;
+}
+
+.done-new-card{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+/*AUTO CARD INFO*/
+#card-info-screen {
+    top: 626px;
+    left: 0px;
+    position: absolute;
+    z-index: 8;
+}
+
 
 /*PROCESSING*/
 #processing-screen {
@@ -470,10 +556,24 @@ html, body {
     z-index: 4;
 }
 
+#waiting {
+    position: absolute;
+    top: 260px;
+    left: 156px;
+}
+
 /*CONFIRM*/
 #confirm-screen {
-    left: 626px;
-    top: 0px;
+    top: 626px;
+    left: 0px;
     position: absolute;
-    z-index: 4;
+    z-index: 5;
+}
+
+#back-home {
+    bottom: 11px;
+    right: 7px;
+    position: absolute;
+    z-index: 5;
+    width: 98px;
 }
