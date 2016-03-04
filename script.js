@@ -205,5 +205,9 @@ $(document).ready(function(){
 		$('.topping-text').html(topping1_text);
 	});
 
+	$('#back-home').click(function() {
+		location.reload();
+	});
+
 });
 
