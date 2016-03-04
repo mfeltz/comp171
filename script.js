@@ -5,14 +5,15 @@ $(document).ready(function(){
 	var size_text;
 	var topping1_text;
 
-	//we're not accounting for the default 2 sundaes
-	// otherwise it works!
+	var defaultPrice = 18.28;
 
 	var updatePrice = function(amt) {
-		$('.price-text').html(price += amt);
-		var tax = ((price + 1) * 0.06).toFixed(2);
+		price += amt;
+		var actualPrice = price + defaultPrice;
+		$('.price-text').html(actualPrice);
+		var tax = ((actualPrice + 1) * 0.06).toFixed(2);
 		$('.tax-text').html(tax);
-		var total = parseInt(tax) + price + 18.28;
+		var total = parseInt(tax) + actualPrice;
 		$('.total-text').html(total);
 
 	};
@@ -207,6 +208,24 @@ $(document).ready(function(){
 	$('.select').click(function() {
 		$('.select').css({backgroundColor: 'transparent'});
 		$(this).css({backgroundColor: 'black'});
+	});
+
+	//SELECTING ADDRESS
+	$('#sel-1').click(function() {
+		$('#select-address-label').html('Home');
+	});
+
+	$('#sel-2').click(function() {
+		$('#select-address-label').html('Work');
+	});
+
+	//SELECT PAYMENT
+	$('#sel-3').click(function() {
+		$('#select-payment-label').html('Visa x0001');
+	});
+
+	$('#sel-4').click(function() {
+		$('#select-payment-label').html('MasterCard x0002');
 	});
 
 	$('#back-home').click(function() {
