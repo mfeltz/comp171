@@ -54,39 +54,39 @@ html, body {
 /*CART PRICES*/
 #cart-total {
     position: absolute;
-    bottom: 144px;
-    left: 304px;
+    bottom: 23%;
+    right: 6%;
 }
 
 #cart-tax {
     position: absolute;
-    bottom: 82px;
-    left: 313px;
+    bottom: 12.8%;
+    right: 6%;
 }
 
 #cart-grand-total {
     position: absolute;
-    bottom: 50px;
-    left: 303px;
+    bottom: 8%;
+    right: 6%;
 }
 
 /*CHECKOUT PRICES*/
 #checkout-total {
     position: absolute;
-    bottom: 143px;
-    left: 304px;
+    bottom: 22.5%;
+    right: 6%;
 }
 
 #checkout-tax {
     position: absolute;
-    bottom: 82px;
-    left: 313px;
+    bottom: 12.2%;
+    right: 6%;
 }
 
 #checkout-grand-total {
     position: absolute;
-    bottom: 49px;
-    left: 303px;
+    bottom: 7.5%;
+    right: 6%;
 }
 
 
@@ -162,8 +162,8 @@ html, body {
 #price-sign-1 {
     position: absolute;
     z-index: 3;
-    top: 117px;
-    right: 9px;
+    top: 68%;
+    right: 15%;
 }
 
 
@@ -178,31 +178,31 @@ html, body {
 #select-address {
     position: absolute;
     z-index: 3;
-    top: 70px;
-    left: 30px;
-    width: 300px;
+    top: 12.5%;
+    left: 9%;
+    width: 86%;
 }
 
 #select-address-label {
     position: absolute;
     z-index: 4;
-    top: 77px;
-    left: 74px;
+    top: 13.5%;
+    left: 23%;
 }
 
 #select-payment {
     position: absolute;
     z-index: 3;
-    top: 115px;
-    left: 30px;
-    width: 300px;
+    top: 19%;
+    left: 9%;
+    width: 86%;
 }
 
 #select-payment-label {
     position: absolute;
     z-index: 4;
-    top: 122px;
-    left: 74px;
+    top: 20%;
+    left: 23%;
 }
 
 #close-icon {
@@ -241,8 +241,8 @@ html, body {
 #order-btn {
     position: absolute;
     z-index: 4;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0%;
+    left: 0%;
     width: inherit;
 }
 
@@ -362,7 +362,7 @@ html, body {
 #add-to-cart {
     position: absolute;
     z-index: 5;
-    bottom: 3%;
+    bottom: 2%;
     right: 7%;
     width: 30%;
 }
@@ -393,20 +393,20 @@ html, body {
 
 .op {
     position: absolute;
-    left: 103px;
+    left: 25%;
     z-index: 7;
-    padding-top: 11px;
-    padding-left: 15px;
-    width: 250px;
-    height: 28px;
+    padding-top: 4%;
+    padding-left: 5%;
+    width: 70%;
+    height: 4%;
 }
 
 #small-op {
-    top: 75px;
+    top: 12%;
 }
 
 #large-op {
-    top: 116px;
+    top: 18.5%;
 }
 
 /*ORANGUTAN TOPPINGS*/
@@ -419,46 +419,46 @@ html, body {
 
 .top-op {
     position: absolute;
-    left: 103px;
+    left: 25%;
     z-index: 7;
-    padding-top: 14px;
-    padding-left: 15px;
-    width: 250px;
-    height: 34px;
+    padding-top: 4%;
+    padding-left: 5%;
+    width: 70%;
+    height: 4%;
 }
 
 #top-1 {
-    top: 57px;
+    top: 10%;
 }
 #top-2 {
-    top: 107px;
+    top: 18%;
 }
 #top-3 {
-    top: 157px;
+    top: 26%;
 }
 #top-4 {
-    top: 207px;
+    top: 42%;
 }
 #top-5 {
-    top: 257px;
+    top: 50%;
 }
 #top-6 {
-    top: 307px;
+    top: 57%;
 }
 #top-7 {
-    top: 357px;
+    top: 66%;
 }
 #top-8 {
-    top: 407px;
+    top: 74%;
 }
 #top-9 {
-    top: 457px;
+    top: 82%;
 }
 #top-10 {
-    top: 507px;
+    top: 89%;
 }
 #top-11 {
-    top: 557px;
+    top: 34%;
 }
 
 /*SELECT ADDRESS*/
