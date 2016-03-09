@@ -30,25 +30,25 @@ html, body {
 .cart-icon {
     position: absolute;
     z-index: 2;
-    top: 5px;
-    right: 7px;
-    width: 30px;
+    top: 0.8%;
+    right: 2.08%;
+    width: 9%;
 }
 
 #menu-icon {
     position: absolute;
     z-index: 2;
-    top: 12px;
-    left: 7px;
-    width: 30px;
+    top: 1.8%;
+    left: 2.08%;
+    width: 9%;
 }
 
 #orangutan-feat {
     position: absolute;
     z-index: 2;
-    top: 304px;
-    left: 15px;
-    width: 175px;
+    top: 48.75%;
+    left: 5%;
+    width: 48%;
 }
 
 /*CART PRICES*/
