@@ -242,15 +242,16 @@ html, body {
     position: absolute;
     z-index: 4;
     bottom: 0%;
-    left: 0%;
-    width: inherit;
+    left: -0.5%;
+    width: 101%;
 }
 
 #cant-order {
     position: absolute;
-    top: 153px;
-    left: 37px;
+    top: 24.5%;
+    left: 16%;
     color: red;
+    font-size: 13px;
     display: none;
 }
 
@@ -501,6 +502,7 @@ html, body {
     position: absolute;
     top: 209px;
     left: 1px;
+    display: none;
 }
 
 #card-place-holder {

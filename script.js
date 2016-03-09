@@ -150,7 +150,7 @@ $(document).ready(function(){
 	$('#card-info-screen .back-arrow').click(function() {
 		rightSlide('#new-card-screen', '375px');
 		topSlide('#card-info-screen', '626px');
-		$('.card-place-holder').show();
+		$('#cardplaceholdercontainer').show();
 		$('#card-info-screen').delay(1000);
 		topSlide('#card-info-screen', '626px');
 	});
