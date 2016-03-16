@@ -94,10 +94,12 @@ $(document).ready(function(){
 	//open/close size selection
 	$('#select-size').click(function() {
 		rightSlide('#size-screen', '0px');
+		// $('#orangutan-screen.detail-overlay').show();
 	});	
 
 	$('#size-screen .back-arrow').click(function() {
 		rightSlide('#size-screen', '374px');
+		// $('#orangutan-screen.detail-overlay').hide();
 	});
 
 	//open/close topping selection
@@ -178,6 +180,9 @@ $(document).ready(function(){
 	$('#size-screen .op').click(function() {
 		$(this).siblings().css({fontWeight: 'normal'});
 		$(this).css({fontWeight: 'bold'});
+		$('#size-screen').delay(500);
+		rightSlide('#size-screen', '374px');
+
 		size_text = $(this).text();
 		$('.size-text').html(size_text);
 
@@ -195,6 +200,8 @@ $(document).ready(function(){
 		$(this).siblings().css({fontWeight: 'normal'});
 		$(this).css({fontWeight: 'bold'});
 		topping1_text = $(this).text();
+		$('#topping-screen').delay(500);
+		rightSlide('#topping-screen', '374px');
 		
 		if (topping1_text == "None") {
 			topping1_text = 'Topping #1  (+ $0.75)';
@@ -211,9 +218,20 @@ $(document).ready(function(){
 		$('.topping-text').html(topping1_text);
 	});
 
-	$('.select').click(function() {
+	//address selection
+	$('#address-screen .select').click(function() {
 		$('.select').css({backgroundColor: 'transparent'});
 		$(this).css({backgroundColor: 'black'});
+		$('#address-screen').delay(500);
+		rightSlide('#address-screen', '374px');
+	});
+
+	//payment selection
+	$('#payment-screen .select').click(function() {
+		$('.select').css({backgroundColor: 'transparent'});
+		$(this).css({backgroundColor: 'black'});
+		$('#payment-screen').delay(500);
+		rightSlide('#payment-screen', '374px');
 	});
 
 	//SELECTING ADDRESS

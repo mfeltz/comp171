@@ -305,6 +305,14 @@ html, body {
     z-index: 5;
 }
 
+/*#orangutan-screen.detai-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    display: none;
+}*/
+
 #select-size {
     position: absolute;
     z-index: 5;
