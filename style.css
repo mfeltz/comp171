@@ -359,6 +359,38 @@ html, body {
     font-size: 12px;
 }
 
+#add-instruction {
+    position: absolute;
+    z-index: 5;
+    top: 69.5%;
+    left: 6%;
+    width: 87%;
+}
+
+#instruction-span {
+    position: absolute;
+    z-index: 5;
+    top: 70.5%;
+    left: 8%;
+    font-size: 12px;
+}
+
+#availability {
+    position: absolute;
+    z-index: 5;
+    top: 75.5%;
+    left: 6%;
+    width: 87%;
+}
+
+#availability-span {
+    position: absolute;
+    z-index: 5;
+    top: 76.5%;
+    left: 8%;
+    font-size: 12px;
+}
+
 #added {
     position: absolute;
     z-index: 5;
@@ -377,11 +409,11 @@ html, body {
 }
 
 #qty {
-        position: absolute;
+    position: absolute;
     z-index: 5;
     bottom: 10.5%;
     left: 34%;
-    width: 18%;
+    width: 17%;
 }
 
 #price-sign {
